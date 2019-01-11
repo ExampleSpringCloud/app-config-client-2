@@ -22,6 +22,8 @@ public class ConfigClientApplication {
 		SpringApplication.run(ConfigClientApplication.class, args);
 	}
 
+	// String propertyValue = test.property value from application.properties or bootstrap.properties file
+	// if not present String propertyValue = "default"
 	@Value("${test.property:default}")
 	String propertyValue;
 
